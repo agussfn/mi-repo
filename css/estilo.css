@@ -14,9 +14,13 @@
     background-size: cover;
 }
 
+body{
+
+}
+
 /* ------ NAV ------ */
 
-.nav{
+.navbarra{
     background-color: #151515;
     display: flex;
     flex-direction: row;
@@ -28,48 +32,54 @@
 
 }
 
-.nav a{
+.navbarra a{
     color: white;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
 }
 
-.nav ul{
+.navbarra ul{
     list-style-type: none;
     display: flex;
+    margin-bottom: 1px;
 }
 
-.nav li{
+.navbarra li{
     margin: 0 20px;
 
 }
 
-.nav img{
+.navbarra img{
     height: 130px;
 }
 
 /* -------- MAIN ---------- */
 .h1-inicio {
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 1000;
-    position: relative;
-    top: 200px;
-    left: 80px;
-  }
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 1000;
+  position: relative;
+  top: 0; /* Ajustar según sea necesario */
+  left: 0; /* Ajustar según sea necesario */
+  margin-top: 200px; /* Nuevo valor para desplazar desde la parte superior */
+  margin-left: 80px; /* Nuevo valor para desplazar desde la izquierda */
+}
 
-  .button1{
-    transition-duration: 0.4s;
-    background-color: rgba(255, 0, 0, 0.675);
-    border: none;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 15px 32px;
-    position: relative;
-    top: 240px;
-    left: 220px;
-  }
+.button1 {
+  transition-duration: 0.4s;
+  background-color: rgba(255, 0, 0, 0.675);
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 15px 32px;
+  position: relative;
+  top: 0; /* Ajustar según sea necesario */
+  left: 0; /* Ajustar según sea necesario */
+  margin-top: 50px; /* Nuevo valor para desplazar desde la parte superior */
+  margin-left: 220px; /* Nuevo valor para desplazar desde la izquierda */
+}
+
 
   .button1 a{
     color: white;
@@ -100,6 +110,31 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-  .bodyCatalogo{
+  body{
     background-color: #121212;
+  }
+
+
+  .carouselll{
+    display: flex;
+    justify-content: center;
+  }
+
+  .titlegrid{
+    display: grid;
+    margin-left: 30%;
+    padding: 20px;
+    
+  }
+
+
+  .grid{
+    display: grid;
+    grid-template-columns: 70% 70%;
+    margin-left: 50px;
+  }
+
+  .container1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
