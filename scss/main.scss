@@ -15,6 +15,62 @@
 
 @import "./sections/gridnosotros";
 
-h2{
+h2 {
   color: white;
+}
+
+p {
+  color: white;
+}
+
+.main3 {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.boton3 {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton3:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 815px) {
+  .navbarra{
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .main2-index{
+    margin: 200px;
+  }
+
+  .carouselll{
+    bottom: 200px;
+  }
 }
