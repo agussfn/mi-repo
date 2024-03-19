@@ -35,22 +35,47 @@
       background-color: red;
     }
   
-    .peliculasDestacadas{
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      top: 90px;
-    }
-  
-    .h1-destacados{
-      display: flex;
-      justify-content: center;
-      position: relative;
-      top: 30px;
-    }
-  
-    .h1-destacados h1{
-      color: white;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+// Estilos para el contenido principal
+main {
+  .h1-destacados {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; // Añadimos un margen superior para separar el título del contenido
+  }
+
+  .peliculasDestacadas {
+    display: flex;
+    flex-wrap: wrap; // Permitimos que los elementos se envuelvan en múltiples líneas
+    justify-content: center;
+    gap: 20px; // Añadimos un espacio entre las películas
+    padding: 0 20px; // Añadimos un padding a los lados para dispositivos más pequeños
+    margin-top: 40px; // Añadimos un margen superior para separar las películas del título
+  }
+
+  // Estilos para cada poster de película
+  .poster1,
+  .poster2,
+  .poster3,
+  .poster4,
+  .poster5 {
+    width: 200px; // Establecemos un ancho fijo para cada póster
+    text-align: center; // Centramos el contenido horizontalmente
+  }
+
+  img {
+    max-width: 100%; // Hacemos que las imágenes sean responsivas
+    height: auto;
+  }
+
+  button {
+    margin-top: 10px; // Añadimos un margen superior al botón para separarlo de la imagen
+  }
+}
+
+// Estilos para el footer
+footer {
+  text-align: center; // Centramos el texto del footer
+  margin-top: 40px; // Añadimos un margen superior para separar el footer del contenido
+}
+
   

@@ -1,18 +1,45 @@
-.titlegrid{
+.main2-index {
+  .titlegrid {
+    // Estilos para el título...
+  }
+
+  .grid {
     display: grid;
-    margin-left: 30%;
-    padding: 20px;
-    
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px; // Espacio entre las columnas
+
+    .container1,
+    .container2 {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 20px; // Añadimos un padding a los contenedores para mayor espacio entre el texto y los bordes de la pantalla
+    }
+
+    .container1 {
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-bottom: 20px;
+      font-size: 16px; // Ajustamos el tamaño de fuente para dispositivos más pequeños
+    }
+
+    .container2 {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 
+  // Media query para dispositivos más pequeños
+  @media (max-width: 815px) {
+    .grid {
+      grid-template-columns: 1fr; // Cambiamos a una sola columna en dispositivos más pequeños
+      row-gap: 20px; // Espacio entre las filas
 
-  .grid{
-    display: grid;
-    grid-template-columns: 70% 70%;
-    margin-left: 50px;
+      .container1,
+      .container2 {
+        padding: 20px; // Aumentamos el padding para separar el texto de los bordes de la pantalla
+      }
+    }
   }
-
-  .container1{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+}

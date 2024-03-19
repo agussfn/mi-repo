@@ -1,6 +1,25 @@
-.carouselll{
-    display: flex;
-    justify-content: center;
+.carouselll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExampleControls {
+  max-width: 815px; // Ajustamos el ancho máximo del carousel a 815px
+  width: 100%; // Aseguramos que el carousel ocupe todo el ancho disponible
+  margin: 0 auto; // Centramos el carousel horizontalmente
+}
+
+.carousel-item img {
+  max-width: 100%; // Ajustamos el ancho máximo de las imágenes al 100% del carousel
+  height: auto; // Permitimos que la altura de las imágenes se ajuste automáticamente para mantener la proporción
+}
+
+@media (max-width: 815px) {
+  .carouselll {
+    padding: 0 20px; // Añadimos un padding a los lados del carousel para dispositivos más pequeños
   }
+}
+
 
   

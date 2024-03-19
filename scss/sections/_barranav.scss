@@ -1,6 +1,5 @@
 /* ------ NAV ------ */
-
-.navbarra{
+.navbarra {
     background-color: #151515;
     display: flex;
     flex-direction: row;
@@ -9,27 +8,44 @@
     padding: 0 20px;
     height: 50px;
 
+    @media (max-width: 815px) {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
 
-}
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
 
-.navbarra a{
-    color: white;
-    text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
-}
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin-bottom: 1px;
 
-.navbarra ul{
-    list-style-type: none;
-    display: flex;
-    margin-bottom: 1px;
-}
+        @media (max-width: 815px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 
-.navbarra li{
-    margin: 0 20px;
+    li {
+        margin: 0 20px;
 
-}
+        @media (max-width: 815px) {
+            margin: 10px 0;
+        }
+    }
 
-.navbarra img{
-    height: 130px;
+    img {
+        height: 130px;
+
+        @media (max-width: 815px) {
+            height: auto;
+            max-width: 100%;
+        }
+    }
 }
