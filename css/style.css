@@ -180,6 +180,9 @@ p {
   margin: 0 auto;
   padding: 20px; }
 
+h1 {
+  color: white; }
+
 form {
   display: flex;
   flex-direction: column; }
